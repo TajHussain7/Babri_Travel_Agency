@@ -1,12 +1,12 @@
 # Welcome to the **SkyWay Travel Agency** Repository!
 
-This project contains the code for the **SkyWay Travel Agency** website, which provides detailed information about our Umrah packages, hotel bookings, and contact details.
+This project contains the code for the **SkyWay Travel Agency** website, which provides detailed information about our Flights packages, hotel bookings, and contact details.
 
 ---
 
 ## Project Overview
 
-The **SkyWay Travel Agency** website is designed to deliver a seamless and user-friendly experience for travelers planning their Umrah journey. Our platform offers easy navigation, social media integration, and convenient access to contact information and booking tools. With its modern and responsive design, users can enjoy a smooth browsing experience across all devices.
+The **SkyWay Travel Agency** website is designed to deliver a seamless and user-friendly experience for travelers planning their Worldwide tour booking journey. Our platform offers easy navigation, social media integration, and convenient access to contact information and booking tools. With its modern and responsive design, users can enjoy a smooth browsing experience across all devices.
 
 ---
 
