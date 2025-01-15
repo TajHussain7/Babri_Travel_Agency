@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --main-color: #1cc3b2;
+}
+
+/* Body Styling */
+body {
+  background-color: aliceblue;
+  height: 120vh;
+}
+
+/* Back Button */
+.back {
+  border: 2px solid #1cc3b2;
+  height: 40px;
+  width: 70px;
+  margin: 30px 0px 0px 20px;
+  padding: 9px;
+}
+
+/************************************ Main Section ***************************** */
+#main_section {
+  border: 2px solid #1cc3b2;
+  height: 90vh;
+  width: 50vw;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: #2c2c2e80 5px 5px 30px 0px;
+}
+
+/* Top Heading and Paragarph */
+#top_Menu {
+  text-align: center;
+}
+#top_Menu > h1,
+p {
+  word-spacing: 5px;
+}
+#top_Menu > p {
+  text-decoration-color: #0c9f90;
+  text-decoration-line: underline;
+}
+.mark {
+  background: linear-gradient(
+    -100deg,
+    hsla(48, 91%, 70%, 0.9) 95%,
+    hsla(48, 92%, 75%, 0.5) 95%,
+    hsla(48, 92%, 75%, 0.5)
+  );
+  border-radius: 1rem 0;
+  padding: 0.6rem;
+}
+
+/************************************ Form Section Formatting ***************************** */
+.main_form {
+  height: 320px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.main_form > form > label {
+  display: block;
+}
+.main_form > form > input {
+  width: 300px;
+  border: 1.5px solid #1cc3b2;
+  height: 25px;
+  padding: 4px;
+  margin: 5px 0px 20px 0px;
+  border-radius: 5px;
+}
+
+/* Checkbox Styling */
+.checkbox {
+  margin: 5px 0px 20px 0px;
+}
+.checkbox > label {
+  font-size: 0.9rem;
+}
+
+/* Buttons styling */
+button {
+  display: block;
+  width: 300px;
+  height: 25px;
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1cc3b2;
+  margin: 20px 0px 0px 0px;
+}
+button:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  background-color: rgb(252, 252, 252);
+  box-shadow: #2c2c2e80 5px 5px 30px 0px;
+}
+
+/* Error Message */
+#errorMessage {
+  display: none;
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}

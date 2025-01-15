@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+
+    <!-- Style Sheet Link -->
+    <link rel="stylesheet" href="Login.css" />
+
+    <!-- Font Library Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Go To Home Button -->
+    <button class="back">Back</button>
+
+    <!-- Top Section -->
+    <section id="main_section">
+      <div id="top_Menu">
+        <h1 id="heading">Welcome to Login Page</h1>
+        <p id="note" class="mark">All the fields are mandatory.</p>
+      </div>
+
+      <!-- Form main section -->
+      <div class="main_form">
+        <form action="Data.txt" id="form">
+          <label for="User_name">Enter Name</label>
+          <input
+            type="text"
+            value="Tajamal"
+            id="User_name"
+            name="User_name"
+            required
+          />
+
+          <label for="email">Enter Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="xyz@gamil.com"
+            required
+          />
+          <label for="password">Enter password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="Enter Password"
+          />
+
+          <p id="errorMessage">Invalid username or password.</p>
+          <div class="checkbox">
+            <input type="checkbox" id="Remember_Me" />
+            <label for="Remember_Me">Remember Me</label>
+          </div>
+
+          <!-- Buttons  -->
+          <button type="button" id="submit">Submit</button>
+          <button type="button" id="sign_up">Sign up</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- JavaScript File Link -->
+    <script src="Login.js"></script>
+  </body>
+</html>
