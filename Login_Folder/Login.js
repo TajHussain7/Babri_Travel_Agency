@@ -9,38 +9,50 @@ back_to_Home.addEventListener("click", () => {
 
 // Event on submit button
 let submit = document.querySelector("#submit");
-submit.addEventListener("click", function () {
-  submitFunction();
+submit.addEventListener("click", function (e) {
+  submitFunction(e);
 });
-
+let user_name = document.querySelector("#User_name");
+let password = document.querySelector("#password");
+let email = document.querySelector("#email");
+let emailRegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let error_Message = document.querySelector("#errorMessage");
 // Submit function()
-function submitFunction() {
-  let user_name = document.querySelector("#User_name");
-  let password = document.querySelector("#password");
-  let email = document.querySelector("#email");
-
+function submitFunction(e) {
+  error_Message.style.display = "none";
   if (user_name.value === " " || password.value === " " || email.value === "") {
-    let error_Message = document.querySelector("#errorMessage");
+    e.preventDefault();
     error_Message.style.display = "block";
-    error_Message.textContent = "Invalid username or password.";
+    error_Message.textContent = "All fileds are required.";
+    return;
+  }
+  if (!emailRegExp.test(email.value)) {
+    e.preventDefault();
+    error_Message.style.display = "block";
+    error_Message.textContent = "Please enter a valid email address.";
+    return;
+  }
+  if (
+    emailRegExp.test(email.value) &&
+    (password.value === "" || user_name.value === "")
+  ) {
+    e.preventDefault();
+    error_Message.style.display = "block";
+    error_Message.textContent = "All fileds are required.";
+    return;
   } else {
     console.log("Login form is successfully submitted. ");
     submit.textContent = "Submitted";
     window.alert("Form is submitted successfully");
-    // Remove event after 3 seconds
-    removeEvent();
-
-    // Re-link the event
-    submit.addEventListener("click", submitFunction);
   }
-}
 
-// Remove Event Function
+  // Remove Event Function
+  removeEvent();
+}
 function removeEvent() {
   setTimeout(() => {
     form.reset();
     console.log("Form reset. ");
-
     submit.removeEventListener("click", submitFunction);
     submit.textContent = "Submit";
   }, 3000);
