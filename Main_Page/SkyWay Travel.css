@@ -634,22 +634,20 @@ textarea,
 
 #footer {
   height: 500px;
-  border: 2px solid fuchsia;
   background-color: var(--main-color);
-  padding: 10px;
   display: grid;
   grid-template-columns: 300px 500px 500px;
 }
-#footer_text {
-  color: aliceblue;
+#footer_text > a > h5 {
+  color: black;
   width: 250px;
   height: 100px;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   text-align: center;
   position: relative;
   top: 10%;
   left: 5%;
-  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+  box-shadow: rgba(61, 61, 63, 0.8) 9px 9px 29px 0px;
 }
 #footer_links {
   width: 250px;
@@ -660,11 +658,10 @@ textarea,
   flex-direction: column;
 }
 #footer_links > a {
-  color: aliceblue;
-  font-weight: bold;
+  color: black;
 }
 #footer_links > a:hover {
-  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+  box-shadow: rgba(61, 61, 63, 0.5) 9px 9px 29px 0px;
 }
 .footer_Contact {
   width: 300px;
@@ -675,7 +672,7 @@ textarea,
 #footer_heading,
 #footer_address,
 #footer_icon {
-  color: aliceblue;
+  color: black;
 }
 #footer_heading {
   width: 250px;
@@ -686,12 +683,23 @@ textarea,
   font-size: 1.1rem;
 }
 .footer_Contactlink {
-  color: aliceblue;
+  color: black;
   font-size: 1.1rem;
-  font-weight: bold;
 }
 #footer_address {
   margin: 40px 0px 0px 0px;
   font-size: 1.1rem;
+}
+/* Copyright section */
+#rights {
+  border-top: 2px solid black;
+  margin: 50px 0px 0px 0px;
+  height: 70px;
+  width: 98vw;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  font-size: 1rem;
+}
+#rights > p > span {
   font-weight: bold;
 }

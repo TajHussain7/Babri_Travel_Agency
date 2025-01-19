@@ -4,6 +4,18 @@ login.addEventListener("click", function () {
   window.location.href = "../Login_Folder/index.html";
 });
 
+// Home Page Navigation - - - - - - *
+let Home_page = document.getElementById("Home_Page");
+Home_page.addEventListener("click", function () {
+  window.location.href = "index.html";
+});
+
+// Scroll to top - - - - - *
+document.getElementById("scrollToTop").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Map API link - - - - - - - - - - - *
 // Initialize the map
 let map;

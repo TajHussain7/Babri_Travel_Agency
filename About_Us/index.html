@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <!-- CSS File -->
+
+    <link rel="stylesheet" href="About us.css" />
+    <!-- Font Library Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button class="back">Back</button>
+    <header>
+      <h1>About Us</h1>
+    </header>
+    <div class="container">
+      <h1 id="section">Welcome to Skyway Travel</h1>
+      <p>
+        Skyway Travel is a web development project designed to enhance user
+        experience by providing key functionalities like interactive maps and
+        service details. It's a platform that showcases the capabilities of
+        modern web technologies while solving real-world problems.
+      </p>
+      <h2 id="section">Our Purpose</h2>
+      <p>
+        This project was created to help users explore and book Hajj and Umrah
+        packages with ease. Additionally, it serves as an interactive platform
+        for learning and demonstrating web development skills.
+      </p>
+      <h2 id="section">Our Mission</h2>
+      <p>
+        Our mission is to deliver a seamless and user-friendly platform where
+        users can find essential services, locations, and information. We aim to
+        make online travel planning accessible and efficient for everyone.
+      </p>
+
+      <h2 id="section">Features</h2>
+      <ol>
+        <li>
+          Interactive Google Map to showcase the location of our university.
+        </li>
+        <br />
+        <li>Dedicated sections for Hajj and Umrah service details.</li>
+        <br />
+        <li>User-friendly design with secure and responsive functionality.</li>
+        <br />
+      </ol>
+
+      <p>
+        Thank you for visiting Skyway Travel! We hope you enjoy exploring the
+        features and learning about our project.
+      </p>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+      let back_to_Home = document.querySelector(".back");
+
+      back_to_Home.addEventListener("click", () => {
+        window.location.href = "../Main_Page/index.html";
+      });
+    </script>
+  </body>
+</html>
