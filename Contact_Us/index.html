@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="Contact Us.css" />
+    <!-- Font Library Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <p>
+        We're here to assist you with all your travel needs. Get in touch today!
+      </p>
+    </header>
+    <button class="back">Back</button>
+    <div class="container">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        />
+
+        <label for="subject">Subject:</label>
+        <select id="subject" required>
+          <option value="" disabled selected>Select a subject</option>
+          <option value="Inquiry">General Inquiry</option>
+          <option value="Booking">Booking Information</option>
+          <option value="Feedback">Feedback</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p><strong>Phone:</strong> +943 800 2540</p>
+        <p><strong>Email:</strong>SkyWayTravels@gmail.com</p>
+        <p>
+          <strong>Address:</strong>University of Central Punjab, Lahore,
+          Pakistan
+        </p>
+      </div>
+
+      <!-- Google Map -->
+      <div id="map"></div>
+    </div>
+
+    <div id="footer_line"></div>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWOVxrm54p7NJo5Rj1RYuHTuErHPkQdK4&libraries=places"></script>
+
+    <!-- JavaScript -->
+    <script src="Contact Us.js"></script>
+  </body>
+</html>

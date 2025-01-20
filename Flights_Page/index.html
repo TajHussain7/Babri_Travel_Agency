@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flights</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="Flights.css" />
+
+    <!-- Font Library Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="firstHeading">Book Your Flights</h1>
+      <p>Find and confirm your ideal flights with ease!</p>
+    </header>
+    <!-- Go To Home Button -->
+    <button class="back">Back</button>
+    <div class="container">
+      <h2>Search for Flights</h2>
+      <form class="flight-form" id="CountryflightForm">
+        <div>
+          <label for="departure">Departure:</label>
+          <input
+            type="text"
+            id="departure"
+            placeholder="Enter departure country"
+            required
+          />
+        </div>
+        <div>
+          <label for="arrival">Arrival:</label>
+          <input
+            type="text"
+            id="arrival"
+            placeholder="Enter arrival country"
+            required
+          />
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" required />
+        </div>
+        <button type="submit">Search Flights</button>
+      </form>
+
+      <h2>Available Flights</h2>
+      <div class="flight-list" id="Country_flightList"></div>
+
+      <h1>Flight Price Comparison</h1>
+      <h2>Country to Country</h2>
+      <canvas id="flightPriceGraphForCountry" width="400" height="200"></canvas>
+
+      <!-- City to City Flights -->
+      <h2 id="Search_city">Search for Flights</h2>
+      <form class="flight-form" id="CityflightForm">
+        <div>
+          <label for="departure">Departure:</label>
+          <input
+            type="text"
+            id="departure"
+            placeholder="Enter departure city"
+            required
+          />
+        </div>
+        <div>
+          <label for="arrival">Arrival:</label>
+          <input
+            type="text"
+            id="arrival"
+            placeholder="Enter arrival city"
+            required
+          />
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" required />
+        </div>
+        <button type="submit">Search City to City Flights</button>
+      </form>
+      <h2>Available Flights</h2>
+      <div class="flight-list" id="City_flightList"></div>
+      <canvas id="flightPriceGraphForCity" width="400" height="200"></canvas>
+    </div>
+    <div id="footer_line"></div>
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Flights.js"></script>
+  </body>
+</html>

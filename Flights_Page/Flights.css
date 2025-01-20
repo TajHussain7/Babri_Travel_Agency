@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --main-color: #1cc3b2;
+}
+/* Back Button */
+.back {
+  border: 2px solid #1cc3b2;
+  height: 40px;
+  width: 70px;
+  padding: 9px;
+  border-radius: 10px;
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  background-color: aliceblue;
+}
+.back:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  background-color: rgb(252, 252, 252);
+  box-shadow: #2c2c2e80 5px 5px 30px 0px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+header {
+  background-color: var(--main-color);
+  color: aliceblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+  border-radius: 8px;
+}
+#firstHeading {
+  color: aliceblue;
+}
+h2 {
+  color: #333;
+}
+h1,
+h2 {
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+/* Form Styling */
+.flight-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.flight-form label {
+  font-size: 1em;
+}
+
+.flight-form input,
+.flight-form select,
+.flight-form button {
+  padding: 12px;
+  font-size: 1em;
+  border: 2px solid #ccc;
+  border-radius: 9px;
+  box-shadow: rgba(44, 44, 46, 0.1) 9px 9px 29px 0px;
+  margin: 3px;
+}
+input::placeholder {
+  color: black;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.flight-form button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flight-form button:hover {
+  background-color: #1aa598;
+}
+
+/* Flight Listings */
+.flight-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.flight-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  text-align: center;
+}
+
+.flight-card h3 {
+  margin: 10px 0;
+}
+
+.flight-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.flight-card button {
+  background-color: #1cc3b2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flight-card button:hover {
+  background-color: #1aa598;
+}
+
+.confirmed {
+  background-color: green !important;
+  cursor: default;
+}
+
+/* Graph Section */
+#graph {
+  margin-top: 30px;
+  height: 300px;
+}
+
+#Search_city {
+  margin: 30px 0px 10px 0px;
+}
+
+/* Footer Section */
+#footer_line {
+  height: 80px;
+  width: 100%;
+  background-color: #1cc3b2;
+}

@@ -268,7 +268,7 @@ h2 {
 }
 
 .middle_buttons > [type="date"] {
-  border: 0px;
+  border: none;
   box-shadow: rgba(44, 44, 46, 0.2) 9px 9px 29px 0px;
   width: 25%;
   height: 50px;
@@ -278,13 +278,23 @@ h2 {
 }
 
 .middle_buttons > [type="text"] {
-  border: 0px;
+  border: none;
   box-shadow: rgba(44, 44, 46, 0.2) 9px 9px 29px 0px;
   width: 25%;
   height: 50px;
   padding: 12px;
   margin: 5px;
   border-radius: 9px;
+}
+
+#city_list {
+  box-shadow: rgba(44, 44, 46, 0.2) 9px 9px 29px 0px;
+  width: 25%;
+  height: 50px;
+  padding: 12px;
+  margin: 5px;
+  border-radius: 9px;
+  border: none;
 }
 
 .middle_buttons > [type="button"] {
@@ -551,6 +561,7 @@ h2 {
 #subscrib_Button:hover {
   color: black;
   box-shadow: #27272880 5px 5px 30px 5px;
+  cursor: pointer;
 }
 /********************************** Google Map API **************************************/
 /* Main Section */
@@ -692,14 +703,21 @@ textarea,
 }
 /* Copyright section */
 #rights {
-  border-top: 2px solid black;
+  border-top: 5px solid aliceblue;
   margin: 50px 0px 0px 0px;
   height: 70px;
-  width: 98vw;
+  width: 98.7vw;
   text-align: center;
   padding: 20px 0px 0px 0px;
   font-size: 1rem;
 }
 #rights > p > span {
   font-weight: bold;
+}
+/* Error Message */
+#errorMessage {
+  display: none;
+  color: red;
+  height: 10px;
+  margin: 0px 0px 0px 15px;
 }

@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --main-color: #1cc3b2;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+header {
+  background-color: var(--main-color);
+  color: aliceblue;
+  padding: 20px;
+  text-align: center;
+}
+/* Back Button */
+.back {
+  border: 2px solid #1cc3b2;
+  height: 40px;
+  width: 70px;
+  padding: 9px;
+  border-radius: 10px;
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  background-color: aliceblue;
+  color: black;
+}
+.back:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  background-color: rgb(252, 252, 252);
+  box-shadow: #2c2c2e80 5px 5px 30px 0px;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: aliceblue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1em;
+  margin: 10px 0 5px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--main-color);
+}
+
+button {
+  background-color: var(--main-color);
+  color: aliceblue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #19ac9d;
+  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+}
+
+.contact-details {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+/* Map Styles */
+#map {
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#footer_line {
+  height: 80px;
+  width: 100%;
+  background-color: #1cc3b2;
+}

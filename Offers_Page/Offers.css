@@ -147,7 +147,9 @@ header p {
 #modal h2 {
   margin-top: 0;
 }
-
+#modalContent {
+  font-size: 1.1rem;
+}
 #modal button {
   background-color: var(--main-color);
   color: aliceblue;
@@ -160,4 +162,10 @@ header p {
 
 #modal button:hover {
   background-color: darkred;
+}
+
+#footer_line {
+  height: 80px;
+  width: 100%;
+  background-color: #1cc3b2;
 }

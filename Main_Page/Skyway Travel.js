@@ -22,11 +22,10 @@ let map;
 async function initMap() {
   // Create a map centered on a default location
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 31.447110193659142, lng: 74.26821013684037 }, // Default coordinates (San Francisco)
+    center: { lat: 31.447110193659142, lng: 74.26821013684037 },
     zoom: 15,
   });
 
-  // Call the function to fetch place details and add a marker
   await getPlaceDetails();
 }
 
@@ -36,8 +35,8 @@ async function getPlaceDetails() {
 
   // Create a Place instance using a Place ID
   const place = new Place({
-    id: "ChIJe2-c03UBGTkR-RKCmpJasPQ", // Replace with your desired Place ID
-    requestedLanguage: "en", // Optional: specify language
+    id: "ChIJe2-c03UBGTkR-RKCmpJasPQ",
+    requestedLanguage: "en",
   });
 
   // Fetch desired fields from the place
@@ -67,7 +66,83 @@ window.onload = initMap;
 
 // ---------------------------------------------------------------------------------------
 // Explore Package Button that is on Image - - - - *
-let middle_sectionsButtons = document.querySelector(".middle_sectionsButtons");
-middle_sectionsButtons.addEventListener("click", function () {
+let middle_sectionsButton_One = document.querySelector(
+  "#middle_sectionsButton_One"
+);
+middle_sectionsButton_One.addEventListener("click", function () {
   window.location.href = "../Umrah_Page/index.html";
+});
+
+let middle_sectionsButton_Two = document.querySelector(
+  "#middle_sectionsButton_Two"
+);
+middle_sectionsButton_Two.addEventListener("click", function () {
+  window.location.href = "../Flights_Page/index.html";
+});
+
+// ------------------------------------------------------------------------------------
+let Requestor = document.querySelector("#Requestor");
+let phoneNumber = document.querySelector("#phonenumber");
+let RequestorEmail = document.querySelector("#RequestorEmail");
+let Query = document.querySelector("#Query");
+let error_Message = document.querySelector("#errorMessage");
+let emailRegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let Query_Button = document.querySelector("#Query_Button");
+
+Query_Button.addEventListener("click", function (e) {
+  submitFunction(e);
+});
+function submitFunction() {
+  error_Message.style.display = "none";
+  if (
+    Requestor.value === " " ||
+    phoneNumber.value === " " ||
+    RequestorEmail.value === "" ||
+    Query.value === " "
+  ) {
+    error_Message.style.display = "block";
+    error_Message.textContent = "All fileds are required.";
+    e.preventDefault();
+    return;
+  }
+  if (!emailRegExp.test(RequestorEmail.value)) {
+    error_Message.style.display = "block";
+    error_Message.textContent = "Please enter a valid email address.";
+    e.preventDefault();
+    return;
+  }
+  if (
+    emailRegExp.test(RequestorEmail.value) &&
+    (phoneNumber.value === "" || Requestor.value === "" || Query.value === "")
+  ) {
+    error_Message.style.display = "block";
+    error_Message.textContent = "All fileds are required.";
+    e.preventDefault();
+    return;
+  } else {
+    console.log("Login form is successfully submitted. ");
+    Query_Button.textContent = "Submitted";
+    window.alert("Form is submitted successfully");
+  }
+
+  // Remove Event Function
+  removeEvent();
+}
+
+function removeEvent() {
+  setTimeout(() => {
+    Requestor.value === " ";
+    RequestorEmail.value === " ";
+    Query.value === " ";
+    phoneNumber === " ";
+    console.log("Form reset. ");
+    Query_Button.removeEventListener("click", submitFunction);
+    Query_Button.textContent = "Submit";
+  }, 3000);
+}
+
+// Search Flights - - - - *
+let Search_Flights = document.querySelector("#Search_Flights");
+Search_Flights.addEventListener("click", function () {
+  window.location.href = "../Flights_Page/index.html";
 });

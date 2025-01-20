@@ -27,12 +27,15 @@
       <div class="offers">
         <!-- Offer 1 -->
         <div class="offer-card">
-          <img src="../Main_Page/airbus.jpg" alt="Hajj Package" />
+          <img
+            src="../Main_Page/airbus.jpg"
+            alt="Gold Package for World Tour"
+          />
           <div class="content">
             <h3>World Tour Gold Package</h3>
             <p>Includes luxury accommodations, flights, and guided tours.</p>
             <div class="price">$2500</div>
-            <button onclick="showDetails('Hajj Gold Package')">
+            <button onclick="showDetails('World Tour Gold Package')">
               View Details
             </button>
           </div>
@@ -40,14 +43,17 @@
 
         <!-- Offer 2 -->
         <div class="offer-card">
-          <img src="../Main_Page/Inside airplane.jpg" alt="Umrah Package" />
+          <img
+            src="../Main_Page/Inside airplane.jpg"
+            alt="Silver Package for World Tour"
+          />
           <div class="content">
             <h3>World Tour Silver Package</h3>
             <p>
               Affordable package with comfortable hotels and economy flights.
             </p>
             <div class="price">$1200</div>
-            <button onclick="showDetails('Umrah Silver Package')">
+            <button onclick="showDetails('World Tour Silver Package')">
               View Details
             </button>
           </div>
@@ -55,14 +61,19 @@
 
         <!-- Offer 3 -->
         <div class="offer-card">
-          <img src="../Main_Page/autumn Place.jpg" alt="Combo Package" />
+          <img
+            src="../Main_Page/autumn Place.jpg"
+            alt="Combo Package for World Tour"
+          />
           <div class="content">
             <h3>World Tour Combo Package</h3>
             <p>
               Experience the beauty of world with exclusive perks and services.
             </p>
             <div class="price">$4000</div>
-            <button onclick="showDetails('Combo Package')">View Details</button>
+            <button onclick="showDetails('World Tour Combo Package')">
+              View Details
+            </button>
           </div>
         </div>
       </div>
@@ -74,9 +85,12 @@
       <div class="offers">
         <!-- Offer 1 -->
         <div class="offer-card">
-          <img src="../Main_Page/Hajj and Umrah.jpg" alt="Hajj Package" />
+          <img
+            src="../Main_Page/Hajj and Umrah.jpg"
+            alt="Gold Package for Hajj and Umrah"
+          />
           <div class="content">
-            <h3>Hajj Gold Package</h3>
+            <h3>Gold Package</h3>
             <p>Includes luxury accommodations, flights, and guided tours.</p>
             <div class="price">$2500</div>
             <button onclick="showDetails('Hajj Gold Package')">
@@ -87,9 +101,12 @@
 
         <!-- Offer 2 -->
         <div class="offer-card">
-          <img src="../Main_Page/Madina.jpg" alt="Umrah Package" />
+          <img
+            src="../Main_Page/Madina.jpg"
+            alt="Silver Package for Hajj and Umrah"
+          />
           <div class="content">
-            <h3>Umrah Silver Package</h3>
+            <h3>Silver Package</h3>
             <p>
               Affordable package with comfortable hotels and economy flights.
             </p>
@@ -102,7 +119,10 @@
 
         <!-- Offer 3 -->
         <div class="offer-card">
-          <img src="../Main_Page/Hajj.jpg" alt="Combo Package" />
+          <img
+            src="../Main_Page/Hajj.jpg"
+            alt="Combo Package for Hajj and Umrah"
+          />
           <div class="content">
             <h3>Combo Package</h3>
             <p>
@@ -115,13 +135,101 @@
       </div>
     </div>
 
-    <!-- Modal -->
-    <div id="modal">
-      <h2 id="modalTitle"></h2>
-      <p id="modalContent"></p>
-      <button onclick="closeModal()">Close</button>
+    <!-- Adventure Tour Packages -->
+    <div class="container">
+      <h2>Adventure Tour Packages & Trip</h2>
+      <div class="offers">
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <img
+            src="safaris.jpg"
+            alt="Adventure Tour Packages & Trip for Safaris"
+          />
+          <div class="content">
+            <h3>Safaris</h3>
+            <p>
+              Includes luxury accommodations, flights, medical services and
+              guided tours.
+            </p>
+            <div class="price">$2500</div>
+            <button onclick="showDetails('Safaris')">View Details</button>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <img
+            src="hiking.jpg"
+            alt="Adventure Tour Packages & Trip for hiking"
+          />
+          <div class="content">
+            <h3>Hiking</h3>
+            <p>
+              Affordable package with comfortable hotels and adventurous trip.
+            </p>
+            <div class="price">$1200</div>
+            <button onclick="showDetails('Hiking')">View Details</button>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer-card">
+          <img
+            src="diving.jpg"
+            alt="Adventure Tour Packages & Trip for diving"
+          />
+          <div class="content">
+            <h3>Diving</h3>
+            <p>Experience diving with exclusive perks and services.</p>
+            <div class="price">$4000</div>
+            <button onclick="showDetails('Diving')">View Details</button>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Membership and Student Offers -->
+    <div class="container">
+      <h2>Membership & Student Discounts</h2>
+      <div class="offers">
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <img src="membership.jpg" alt="Membership Card" />
+          <div class="content">
+            <h3>Membership</h3>
+            <p>Offers for repeat customers or loyalty program members.</p>
+            <div class="price">50$</div>
+            <button onclick="showDetails('Membership')">View Details</button>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <img src="Discount.jpg" alt="Student's Discount" />
+          <div class="content">
+            <h3>Student's Discount</h3>
+            <p>
+              Offers designed specifically for students traveling for education
+              or leisure.
+            </p>
+            <div class="price">$100</div>
+            <button onclick='showDetails("Student Discount")'>
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal">
+      <h1 id="modalTitle"></h1>
+      <p id="modalContent"></p>
+      <button onclick="closeModal()">Close</button>
+      <button onclick="PhoneNumber()">What's App</button>
+    </div>
+
+    <div id="footer_line"></div>
     <!-- JS File -->
     <script src="Offers.js"></script>
   </body>

@@ -60,16 +60,16 @@
       <!-- Menu Section -->
       <div class="menu_Section">
         <a href="index.html" class="navlink">Home</a>
-        <a href="#" class="navlink">Flights</a>
+        <a href="../Flights_Page/index.html" class="navlink">Flights</a>
         <a href="../Umrah_Page/index.html" class="navlink">Umrah</a>
         <a href="../Offers_Page/index.html" class="navlink">Offers</a>
         <a href="../About_Us/index.html" class="navlink">About us</a>
-        <a href="#" class="navlink">Contact</a>
+        <a href="../Contact_Us/index.html" class="navlink">Contact</a>
         <a href="#" class="search_bar"
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
         <div class="booking">
-          <a href="#">Book Now</a>
+          <a href="../Flights_Page/index.html">Book Now</a>
         </div>
       </div>
     </header>
@@ -92,27 +92,21 @@
         <div class="middle_buttons">
           <input type="date" name="Departure-Date" id="Departure-Date" />
           <input type="date" name="Return_Date" id="Return_Date" />
-          <input
-            type="text"
-            name="city"
-            id="city"
-            list="city_list"
-            placeholder="Enter city"
-          />
-          <datalist id="city_list">
-            <option value="Lahore"></option>
-            <option value="Sailkot"></option>
-            <option value="Gujrat"></option>
-            <option value="Gujranwala"></option>
-            <option value="Faisalabad"></option>
-            <option value="Bahawalpur"></option>
-            <option value="Rawalpindi"></option>
-            <option value="Multan"></option>
-            <option value="Jhelum"></option>
-            <option value="Hyderabad"></option>
-          </datalist>
+          <select name="city_list" id="city_list">
+            <option value="" disabled selected>Select a subject</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Sailkot">Sailkot</option>
+            <option value="Gujrat">Gujrat</option>
+            <option value="Gujranwala">Gujranwala</option>
+            <option value="Faisalabad">Faisalabad</option>
+            <option value="Bahawalpur">Bahawalpur</option>
+            <option value="Rawalpindi">Rawalpindi</option>
+            <option value="Multan">Multan</option>
+            <option value="Jhelum">Jhelum</option>
+            <option value="Hyderabad">Hyderabad</option>
+          </select>
 
-          <input type="button" value="Search Flights" />
+          <input type="button" value="Search Flights" id="Search_Flights" />
         </div>
       </div>
     </div>
@@ -171,14 +165,18 @@
         Hajj and Umrah packages.
       </p>
       <h1 id="image_desc">Hajj and Umrah Packages 2025</h1>
-      <button class="middle_sectionsButtons">Explore Packages</button>
+      <button class="middle_sectionsButtons" id="middle_sectionsButton_One">
+        Explore Packages
+      </button>
 
       <!-- Section_Two  -->
     </section>
     <section class="middle_sectionTwo">
       <p id="image_desc">Can't decide where to go?</p>
       <h1 id="image_desc">Explore every destination</h1>
-      <button class="middle_sectionsButtons">Search filghts everywhere</button>
+      <button class="middle_sectionsButtons" id="middle_sectionsButton_Two">
+        Search filghts everywhere
+      </button>
     </section>
 
     <!-------------------- Subscription Section -->
@@ -198,7 +196,7 @@
     <div id="end_Section">
       <div id="callToAction">
         <h2>Request a Callback</h2>
-        <input type="text" placeholder="Name" required />
+        <input type="text" placeholder="Name" id="Requestor" />
         <input
           type="tel"
           name="phonenumber"
@@ -206,14 +204,20 @@
           placeholder="Phone Number"
           required
         />
-        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          id="RequestorEmail"
+          required
+        />
 
         <textarea
           name="Query"
           id="Query"
           placeholder="Type a message"
         ></textarea>
-
+        <p id="errorMessage">Invalid username or password.</p>
         <button type="button" id="Query_Button">Submit</button>
       </div>
       <div id="map"></div>
@@ -225,12 +229,12 @@
       </div>
       <div id="footer_links">
         <a href="#" id="scrollToTop">Home</a>
-        <a href="#">Flights</a>
+        <a href="../Flights_Page/index.html">Flights</a>
         <a href="../Umrah_Page/index.html">Umrah Packages</a>
-        <a href="#">Offers</a>
-        <a href="#">World Tours</a>
+        <a href="../Offers_Page/index.html">Offers</a>
+        <a href="../Offers_Page/index.html">World Tours</a>
         <a href="../About_Us/index.html">About us</a>
-        <a href="#">Contact us</a>
+        <a href="../Contact_Us/index.html">Contact us</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms and conditions</a>
       </div>
@@ -247,7 +251,6 @@
           Pakistan
         </p>
       </div>
-
       <div id="rights">
         <p>
           &#169; 2025 <span>Skyway Travel Agency</span>. All Rights Reserved.
