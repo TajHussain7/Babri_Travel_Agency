@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+:root {
+  --main-color: #1cc3b2;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+header {
+  background-color: var(--main-color);
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid aliceblue;
+}
+table th {
+  background-color: var(--main-color);
+  color: aliceblue;
+}
+.button {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: aliceblue;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #16aa9b;
+  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+}
+input::placeholder {
+  opacity: 0.7;
+  color: black;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+input {
+  margin: 20px;
+  height: 45px;
+  width: 90%;
+  background-color: aliceblue;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+}
+#Close_button {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: aliceblue;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 20px 0px 0px 5px;
+}
+#Close_button:hover {
+  background-color: #16aa9b;
+  box-shadow: rgba(61, 61, 63, 0.2) 9px 9px 29px 0px;
+}
+.back {
+  border: 2px solid #1cc3b2;
+  height: 40px;
+  width: 70px;
+  margin: 30px 0px 0px 20px;
+  padding: 9px;
+  border-radius: 10px;
+  position: absolute;
+}
+.back:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  background-color: rgb(252, 252, 252);
+  box-shadow: #2c2c2e80 5px 5px 30px 0px;
+}

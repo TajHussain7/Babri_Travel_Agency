@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusive Offers</title>
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="Offers.css" />
+    <!-- Font Library Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Exclusive Offers</h1>
+      <p>Grab our limited-time deals for Hajj & Umrah packages!</p>
+    </header>
+    <!-- Tour Packages -->
+    <!-- Go To Home Button -->
+    <button class="back">Back</button>
+    <div class="container">
+      <h2>World Tour Special Packages</h2>
+      <div class="offers">
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <img src="../Main_Page/airbus.jpg" alt="Hajj Package" />
+          <div class="content">
+            <h3>World Tour Gold Package</h3>
+            <p>Includes luxury accommodations, flights, and guided tours.</p>
+            <div class="price">$2500</div>
+            <button onclick="showDetails('Hajj Gold Package')">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <img src="../Main_Page/Inside airplane.jpg" alt="Umrah Package" />
+          <div class="content">
+            <h3>World Tour Silver Package</h3>
+            <p>
+              Affordable package with comfortable hotels and economy flights.
+            </p>
+            <div class="price">$1200</div>
+            <button onclick="showDetails('Umrah Silver Package')">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer-card">
+          <img src="../Main_Page/autumn Place.jpg" alt="Combo Package" />
+          <div class="content">
+            <h3>World Tour Combo Package</h3>
+            <p>
+              Experience the beauty of world with exclusive perks and services.
+            </p>
+            <div class="price">$4000</div>
+            <button onclick="showDetails('Combo Package')">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Umrah Packages -->
+    <div class="container">
+      <h2>Umrah & Hajj Special Packages</h2>
+      <div class="offers">
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <img src="../Main_Page/Hajj and Umrah.jpg" alt="Hajj Package" />
+          <div class="content">
+            <h3>Hajj Gold Package</h3>
+            <p>Includes luxury accommodations, flights, and guided tours.</p>
+            <div class="price">$2500</div>
+            <button onclick="showDetails('Hajj Gold Package')">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <img src="../Main_Page/Madina.jpg" alt="Umrah Package" />
+          <div class="content">
+            <h3>Umrah Silver Package</h3>
+            <p>
+              Affordable package with comfortable hotels and economy flights.
+            </p>
+            <div class="price">$1200</div>
+            <button onclick="showDetails('Umrah Silver Package')">
+              View Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer-card">
+          <img src="../Main_Page/Hajj.jpg" alt="Combo Package" />
+          <div class="content">
+            <h3>Combo Package</h3>
+            <p>
+              Experience both Hajj and Umrah with exclusive perks and services.
+            </p>
+            <div class="price">$4000</div>
+            <button onclick="showDetails('Combo Package')">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal">
+      <h2 id="modalTitle"></h2>
+      <p id="modalContent"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+
+    <!-- JS File -->
+    <script src="Offers.js"></script>
+  </body>
+</html>

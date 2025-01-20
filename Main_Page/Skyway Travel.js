@@ -64,3 +64,10 @@ async function getPlaceDetails() {
 
 // Initialize the map when the page loads
 window.onload = initMap;
+
+// ---------------------------------------------------------------------------------------
+// Explore Package Button that is on Image - - - - *
+let middle_sectionsButtons = document.querySelector(".middle_sectionsButtons");
+middle_sectionsButtons.addEventListener("click", function () {
+  window.location.href = "../Umrah_Page/index.html";
+});
