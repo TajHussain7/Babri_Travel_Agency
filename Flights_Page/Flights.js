@@ -13,7 +13,7 @@ const flights = [
     time: "2:30 PM",
     price: 450,
   },
-  { id: 3, departure: "Lahore", arrival: "China", time: "6:00 AM", price: 200 },
+  { id: 3, departure: "Lahore", arrival: "China", time: "6:00 AM", price: 700 },
   {
     id: 4,
     departure: "Lahore",
@@ -40,7 +40,7 @@ const flights = [
     departure: "Lahore",
     arrival: "USA",
     time: "8:00 AM",
-    price: 1400,
+    price: 1265,
   },
 ];
 
@@ -103,6 +103,13 @@ function createBarGraph(canvasId, labels, data, title) {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
+      aspectRatio: 5,
+      scales: {
+        x: {
+          maxBarThickness: 50,
+        },
+      },
       plugins: {
         legend: { display: true },
         title: { display: true, text: title },
@@ -186,7 +193,7 @@ const travels = [
     departure: "Quetta",
     arrival: "Lahore",
     time: "7:00 PM",
-    price: 9000,
+    price: 8050,
   },
   {
     id: 7,
@@ -244,9 +251,9 @@ function createBarGraph(canvasId, labels, data, title) {
           data: data,
           backgroundColor: [
             "#0073e6",
-            "#00b33c",
-            "#ff4d4d",
-            "#ffa500",
+            "#22d3ee",
+            "#22c55e",
+            "#d946ef",
             "#800080",
             "#1aa598",
             "hotpink",

@@ -1,0 +1,230 @@
+/* SkyWay Travel.css for responsiveness */
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+  }
+
+  :root {
+    --main-color: #1cc3b2;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    transition: opacity 0.3s ease;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* General responsive layout */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /************************************ Responsive Top Nav_Bar ***************************** */
+  .top_Header {
+    color: white;
+    background-color: rgb(14, 39, 55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 50px;
+  }
+
+  #right {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+
+  #left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 9px 0px 0px 0px;
+  }
+
+  /************************************* Responsive Logo Section *****************************************/
+  .nav_bar {
+    color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: rgb(248, 248, 248);
+    height: 70px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu_Section {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .booking {
+    padding: 0.5rem 1rem;
+    color: aliceblue;
+    height: 70px;
+  }
+
+  /************************************ Responsive Hero Section **************************************/
+  .Hero_image {
+    background-image: url(Home\ Page\ Image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  .heading_Section {
+    color: rgb(249, 249, 250);
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+  }
+  .heading_Section h1 {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+
+  .heading_Section h2 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+  }
+
+  #Login_Button {
+    margin: 2px 0px 0px 0px;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+
+  /************************************* Responsive Middle Section ***************************************/
+  .middle_portion {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 90%;
+    background-color: #f9f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .middle_buttons input,
+  .middle_buttons select,
+  .middle_buttons button {
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  /************************************* Responsive Images ***************************************/
+  .Main-Images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  /************************************* Responsive What We Offer Section ***************************************/
+  .Offering_Services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
+    grid-template-rows: 120px 120px;
+    gap: 2rem;
+  }
+
+  /************************************* Responsive Middle Section ***************************************/
+  .middle_sectionOne,
+  .middle_sectionTwo {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: white;
+  }
+
+  .middle_sectionOne {
+    background-image: url("Hajj\ and\ Umrah.jpg");
+  }
+
+  .middle_sectionTwo {
+    background-image: url("Middle_Section\ Image.jpg");
+  }
+
+  /************************************* Subscription Section ***************************************/
+  .subscrib {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
+    margin: 20px 0px 0px 65px;
+    height: 100px;
+    width: 1860px;
+  }
+
+  .subscrib > input {
+    width: 1860px;
+  }
+  .subscrib > button {
+    width: 200px;
+  }
+
+  /************************************* Responsive Footer ***************************************/
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+}
+/************************************* Media Queries ***************************************/
+@media screen and (max-width: 768px) {
+  .top_Header {
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+  }
+
+  .menu_Section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Hero_image {
+    height: 60vh;
+  }
+
+  .middle_portion {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .middle_buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
