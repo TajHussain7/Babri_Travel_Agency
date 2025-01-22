@@ -1,4 +1,4 @@
-@media screen and (min-width: 1492px) and (min-height:1080px){
+@media screen and (min-width: 1492px) and (min-height: 1080px) {
   .heading_Section {
     color: rgb(249, 249, 250);
     width: 80%;
@@ -18,10 +18,9 @@
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
-
 }
 /* SkyWay Travel.css for responsiveness */
-@media screen and (max-width: 1920px) and (max-height: 1080px) {
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
   * {
     padding: 0;
     margin: 0;
@@ -212,6 +211,10 @@
   .subscrib > button {
     width: 200px;
   }
+  #map {
+    width: 80%;
+    margin-right: 20px;
+  }
 
   /************************************* Responsive Footer ***************************************/
   #footer {
@@ -221,18 +224,18 @@
     padding: 2rem;
   }
 
-  .footer_Contact{
+  .footer_Contact {
     width: 300px;
-  position: relative;
-  left: 10%;
-  top: 10%;
+    position: relative;
+    left: 10%;
+    top: 10%;
   }
-  #rights{
+  #rights {
     border-top: 5px solid aliceblue;
-  height: 90px;
-  width: 18000px;
-  text-align: center;
-  background-color: #1cc3b2;
+    height: 90px;
+    width: 18000px;
+    text-align: center;
+    background-color: #1cc3b2;
   }
 }
 /************************************* Media Queries ***************************************/

@@ -1,0 +1,76 @@
+/* Responsive Styles */
+
+/* Large Screens (1920px and above) */
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .Hero_image {
+    height: 70vh;
+  }
+
+  .menu_Section ul {
+    padding: 0 10%;
+  }
+}
+
+/* Laptops (1366px and above) */
+@media (max-width: 1366px) {
+  .menu_Section ul {
+    font-size: 0.9rem;
+  }
+
+  .Hero_image {
+    height: 60vh;
+  }
+
+  .middle_buttons input,
+  #city_list {
+    width: 40%;
+  }
+}
+
+/* Tablets (768px and above) */
+@media (max-width: 768px) {
+  .nav_bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Hero_image {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .middle_buttons input,
+  #city_list {
+    width: 90%;
+  }
+
+  .Grid-Images {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobiles (480px and below) */
+@media (max-width: 480px) {
+  .nav_bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Hero_image {
+    height: 40vh;
+    font-size: 0.8rem;
+  }
+
+  .middle_buttons input,
+  #city_list {
+    width: 100%;
+  }
+
+  .footer_Section {
+    font-size: 0.9rem;
+  }
+}
