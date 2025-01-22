@@ -39,15 +39,15 @@ ol {
   margin: 5px 0px 0px 16px;
 }
 .back {
+  border: 2px solid #1cc3b2;
   height: 40px;
   width: 70px;
   padding: 9px;
+  border-radius: 10px;
   position: absolute;
-  top: 20%;
-  left: 2%;
-  border-radius: 5px;
-  border: none;
-  background-color: #1cc3b2;
+  top: 2%;
+  left: 1%;
+  background-color: aliceblue;
 }
 .back:hover {
   cursor: pointer;
